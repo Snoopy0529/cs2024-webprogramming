@@ -1,0 +1,160 @@
+body {
+  font-family: sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #e3eeeb 100%;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.card {
+  background: rgb(232, 232, 224) 100%;
+}
+
+.navbar {
+  background-color: #1a201b;
+  border-radius: 0px;
+  border-color: #1a201b;
+}
+
+.navbar-invisibility {
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+
+.divider {
+  margin-top: 1.4%;
+  margin-bottom: 1.4%;
+  background-color: rgba(255, 0, 0, 0);
+  border: 0px solid rgba(217, 211, 211, 0.079);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.divider-image {
+  height: auto;
+  width: 200px;
+}
+
+.container-fluid {
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  flex-flow: column;
+  text-align: justify;
+}
+
+.main-page-cards-background {
+  background: rgb(227, 238, 235) 100%;
+}
+
+.content-image {
+  border-radius: 15%;
+  object-fit: contain;
+}
+
+.content-image-blurred {
+  border-radius: 15%;
+  object-fit: cover;
+  width: auto;
+  height: 500px;
+  filter: blur(2px) brightness(50%);
+}
+
+.carousel-title {
+  margin-bottom: 2rem !important;
+}
+
+.footer {
+  background: #1a201b;
+  color: white;
+}
+
+.main-page-content-body {
+  background: rgb(227, 238, 235) 100%;
+}
+
+.text-highlight-dark-red {
+  background-image: url("assets/pngtree-film-grain-old-texture-effect-png-image_6214682.png");
+  opacity: 100%;
+  background-color: #4a6d4f;
+}
+
+.border-img-resize {
+  width: 300px;
+  height: auto;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
+
+/* Item CSS */
+
+.item-image {
+  width: 200px;
+  height: 200px;
+}
+
+.item-title {
+}
+
+.item-type {
+}
+
+.item-age {
+}
+
+.item-date-procured {
+}
+
+.item-location-acquired {
+}
+
+.item-description {
+  margin-bottom: 30px;
+}
+
+/* Animation-related CSS */
+
+.carousel-image {
+  filter: blur(4px) brightness(50%);
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 0 !important;
+  width: 100%;
+  object-fit: cover;
+  height: 200px;
+  animation-name: slowpan-top-down;
+  animation-duration: 50s;
+  animation-iteration-count: infinite;
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Animation Keyframes */
+
+@keyframes slowpan-top-down {
+  0% {
+    transform: translateX(100px) scale(1.25);
+  }
+
+  100% {
+    transform: translateX(-100px) scale(1.25);
+  }
+}
